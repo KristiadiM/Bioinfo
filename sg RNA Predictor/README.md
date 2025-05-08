@@ -1,4 +1,4 @@
-# CRISPR sgRNA Designer
+# CRISPR sgRNA Predictor
 A simple Python-based tool to predict and analyze potential sgRNA sequences for CRISPR-Cas9 applications. 
 This script scans DNA sequences for suitable guide RNAs (sgRNAs), filters them based on GC content, off-target potential, and predicted activity scores, and outputs results in CSV format with a basic visualization.
 
