@@ -6,7 +6,7 @@ The dataset contains gene expression levels for various samples, and the goal is
 pip install pandas numpy matplotlib scikit-learn lazypredict joblib
 
 ## Dataset Overview
-- Dataset Source : Mod_Cancer_Dataset.zip
+- Dataset Source : Mod_Cancer_Dataset.zip (modified from https://archive.ics.uci.edu/dataset/401/gene+expression+cancer+rna+seq, merged the data and labels)
 - Features : Gene expression levels (continuous numerical values)
 - Target Variable : Cancer Type (multi-class classification)
 - Sample ID : Unique identifier for each sample
