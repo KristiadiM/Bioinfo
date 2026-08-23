@@ -1,10 +1,9 @@
 # In-Silico AMR Evolution Simulator
 
 A small simulation and Snakemake analysis pipeline modeling how a bacterial population acquires and fixes an antibiotic-resistance mutation under serial drug exposure.
-Built as a project pitch for the **AMR-PLAS ScienceCampus**, it demonstrates both **genomic** and **non-genomic mechanisms of antimicrobial resistance evolution** in a single longitudinal genomics workflow.
 
-**1. Simulates evolution, not just genetics.** Each of two arms — an
-antibiotic-exposed lineage and an untreated control — is propagated through
+**1. Simulates evolution, not just genetics.** Each of two arms, an
+antibiotic-exposed lineage and an untreated control, is propagated through
 serial passages (`scripts/simulate_population.py`). Every passage:
 
 1. **Drug exposure / kill step** — resistant cells survive; susceptible cells mostly die, *except* for a small phenotypically tolerant/persister subpopulation that survives at an elevated rate independent of genotype. This is the **non-genomic** axis: transient phenotypic tolerance that buffers a lineage from extinction without changing allele frequency.
@@ -36,7 +35,7 @@ conda env create -f environment.yml
 ## How to Run
 
 1. Clone or download the repository.
-2. Open terminal in the project directory.
+2. Open the terminal in the project directory.
 3. Install the dependencies using pip or conda.
 4. Run the full end-to-end pipeline:
 ```bash
