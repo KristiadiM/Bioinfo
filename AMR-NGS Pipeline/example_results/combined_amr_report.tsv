@@ -1,0 +1,7 @@
+sample	marker_gene	status	pct_identity	pct_coverage	contig
+isolate01_resistant	blaSYN_beta-lactamase-like|acquired|expected:PRESENT	PRESENT	100.0	100.0	NODE_1_length_14247_cov_8.984192
+isolate01_resistant	mefSYN_efflux-pump-like|acquired|expected:PRESENT	PRESENT	100.0	100.0	NODE_1_length_14247_cov_8.984192
+isolate01_resistant	vanSYN_glycopeptide-res-like|acquired|expected:ABSENT	absent			
+isolate02_susceptible	blaSYN_beta-lactamase-like|acquired|expected:PRESENT	absent			
+isolate02_susceptible	mefSYN_efflux-pump-like|acquired|expected:PRESENT	absent			
+isolate02_susceptible	vanSYN_glycopeptide-res-like|acquired|expected:ABSENT	absent			

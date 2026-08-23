@@ -1,0 +1,3 @@
+sample	r1	r2
+isolate01_resistant	data/raw/isolate01_resistant_R1.fastq.gz	data/raw/isolate01_resistant_R2.fastq.gz
+isolate02_susceptible	data/raw/isolate02_susceptible_R1.fastq.gz	data/raw/isolate02_susceptible_R2.fastq.gz
