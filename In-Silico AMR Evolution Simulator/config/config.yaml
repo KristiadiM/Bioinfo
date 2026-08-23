@@ -1,0 +1,44 @@
+# config/config.yaml
+# Parameters for the in-silico serial-passage resistance evolution experiment.
+# Two conditions are simulated in parallel, mirroring a real serial-passage
+# assay with a drug-exposed arm and an untreated control arm.
+
+conditions:
+  drug:
+    # antibiotic selection pressure each passage
+    selection_coefficient: 0.35       # fitness advantage of resistance allele under drug
+    kill_prob_susceptible: 0.92       # fraction of susceptible, non-tolerant cells killed per passage
+    replicates: 8
+  no_drug:
+    selection_coefficient: -0.05      # small fitness *cost* of resistance without drug
+    kill_prob_susceptible: 0.0        # no antibiotic kill pressure
+    replicates: 8
+
+population:
+  N0: 5000                # founder population size per lineage
+  K: 200000                # carrying capacity cells regrow to before next passage/dilution
+  generations: 50           # number of serial passages
+  mutation_rate: 1.0e-5     # per-cell, per-generation probability of de novo resistance mutation
+  reversion_rate: 1.0e-8    # per-cell, per-generation probability resistance allele reverts
+
+non_genomic:
+  # phenotypic tolerance / persistence: a fraction of *susceptible* cells survive
+  # drug exposure each passage without carrying the resistance allele (drug tolerance /
+  # persister-like phenotype), independent of genotype. This decouples short-term
+  # survival from allele frequency change and is the "non-genomic" resistance axis.
+  tolerant_fraction: 0.015
+  tolerant_survival_prob: 0.98
+
+sequencing:
+  # simulated pooled/targeted sequencing of each passage population, mimicking
+  # amplicon or WGS-derived allele counts at the resistance locus
+  depth: 150                # reads per generation sample
+  error_rate: 0.002         # per-read sequencing error probability
+
+calling:
+  # simple frequency-based variant caller applied to simulated read counts
+  min_alt_reads: 3
+  af_call_threshold: 0.03    # minimum alt allele frequency to call a variant present
+  fixation_threshold: 0.95   # allele frequency called as "fixed"
+
+random_seed: 42
