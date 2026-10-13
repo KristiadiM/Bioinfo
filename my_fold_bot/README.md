@@ -211,3 +211,4 @@ FoldBot is intended for **research, educational, and computational screening pur
 
 This project is licensed under the [MIT License](LICENSE).
 
+📬 Contact For questions or suggestions, reach out at: 📧 kristiadimikael@gmail.com
