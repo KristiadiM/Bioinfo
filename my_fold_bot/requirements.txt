@@ -1,0 +1,9 @@
+python-telegram-bot>=21
+httpx
+biopython
+numpy
+matplotlib
+# Only needed for FOLD_BACKEND=local (install the CUDA build of torch if you have an NVIDIA GPU):
+# torch
+# transformers
+# accelerate
